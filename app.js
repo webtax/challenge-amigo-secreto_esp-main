@@ -8,7 +8,7 @@ let amigoSorteado = '';
 function agregarAmigo(){
     nombreAmigo = document.getElementById('amigo').value; 
     if(nombreAmigo == '') { //validar si campo está vacio
-    alert('Tienes escribir un nombre')
+    alert('Tienes que escribir un nombre')
 } else { 
             amigos.push(nombreAmigo); //actualizar array
 limpiarCaja(); //limpiar campo de entrada
