@@ -1,16 +1,16 @@
-<h1 align="center"> Amigo secreto, lógica listas y sorteo</h1>
+<h1 align="center"> Amigo secreto, lógica de listas y sorteo</h1>
 
-Este proyecto personal para aprender
+Este proyecto personal para aprender con Allura
 
-Ingresar nombres de amigos a lista
-Sorteo aleatorio quien es el amigo secreto
+Incluye funciones de ingresar nombres de amigos a lista, y de sorteo aleatorio quien es el amigo secreto
 
-mas especificamente  
--Adicioner, es un input ingresa un nombre.  
--alerta ante añadir vacio  
--visualiza que aparezca  una lista con los nombres abajo  
--boton sortear, realiza un sorteo aleatorio.  
--imprimir debajo el nombre sorteado  
+Mas especificamente:  
+-Adicionar,  input ingresa un nombre.  
+-Alerta ante click añadir sin escribir en input.   
+-visualiza que aparezca una lista con los nombres.  
+-Boton sortear, realiza el sorteo aleatorio.  
+-Imprimir debajo el nombre sorteado    
+-Adicionalmente apretar sortear sin nombres en la lista, da un aviso.  
 
 
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
