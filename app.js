@@ -1,6 +1,8 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let nombreAmigo = "" ;//input
 let amigos =  []; //array nombres
+let amigoSorteado = '';
+
 
 //input 'amigo' 
 function agregarAmigo(){
@@ -28,38 +30,25 @@ function recorrerAmigos() {// función que muestre en la consola y parrafo todos
        //recorrer
        for (let i = 0; i < amigos.length; i++) { //crea una variable i, la pone en cero, le va sumando en cada bucle i++, en cada bucle sale un consolelog, imprimiendo una posicion del array.
      // console.log(amigos); //para testear en consola
-//listaAmigos.innerHTML = amigos;      // imprimir amigos en html, los imprimer con comas, test
-//añadir amigo a listaAmigo como elementoZli>
-/*esta forma no me funciona
-let li = document.createElement("li"); // Crear un elemento <li>
-li.textContent = amigo; // Agregar el nombre del amigo
-lista.appendChild(li); // Insertarlo en la lista
-console.log(lista);*/
+
 
 //sección para imprimir cada nombre en una lista visible
 lista.innerHTML += `<li>${amigos[i]}</li>`; //opcion innerHTML += seguerida por chatgpt, poco eficiente
             }
   }
 
-
-
-
-console.log(amigos);
-//sorteo
-function sortearAmigo() {
-    let amigoElegido = parseInt(Math.random() *numeroAmigosIngresados + 1);
-    let cantidadAmigosSorteados = amigos.length;
-    //en desarrollo
+//función sorteo
+function sortearAmigo() { 
+    let resultadoImpreso = document.getElementById("resultado");
+    if (amigos.length === 0) {
+       resultadoImpreso.innerHTML = "Debe ingresar nombres";
+       } else {
+   let indiceAleatorio  = Math.floor(Math.random()*amigos.length)
+   amigoSorteado = amigos[indiceAleatorio] 
+   resultadoImpreso.innerHTML = amigoSorteado;
+   }
+        
   }
 
 
-/*
-//funcion general para asignar textos
-function asignarTextoElemento(elemento, texto) { 
-    let elementoHTML = document.querySelector(elemento);
-    elementoHTML.innerHTML = texto;
-    return;
-}
 
-
-*/
